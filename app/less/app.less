@@ -78,6 +78,9 @@ p {
   font-size: 1.5em;
 }
 
+.clearfloats {
+  clear: both;
+}
 /*******
 HEADER
 ******/
@@ -327,4 +330,63 @@ form button{
 form button:hover{
   background-color: #36496e;
   transition: ease-in-out .2s;
+}
+
+/****
+FAQ PAGE
+****/
+
+.sub-head {
+  padding-top: 400px;
+  background: url(/img/subpage-water.jpg) center center no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  z-index: -100;
+}
+
+h1.sub-head-title {
+  font-family: georgia-italic, Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+  //font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  position: absolute;
+  top: 240px;
+  left: 0; right: 0;
+  margin: 0 auto;
+}
+
+section#faq {
+  max-width: 1060px;
+  width: 100%;
+  background: rgba(255,255,255,0);
+  margin-top: -300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.big {
+  width: 85px;
+  font-family: georgia-italic, Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 4em;
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+p.question, p.answer {
+  width: 945px;
+  font-family: mission-gothic-thin, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  float: left;
+  padding-top: 20px;
+}
+
+p.question {
+  font-size: 2em;
+}
+
+article {
+  padding-bottom: 80px;
 }

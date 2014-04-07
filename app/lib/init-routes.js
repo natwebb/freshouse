@@ -19,7 +19,7 @@ function load(app, fn){
   app.get('/', d, home.index);
   app.post('/feedback', d, home.feedback);
   //app.get('/about', d, home.about);
-  //app.get('/faq', d, home.faq);
+  app.get('/faq', d, home.faq);
   app.get('/products', d, products.index);
   app.get('/products/add', d, products.add);
   app.post('/products/create', d, products.create);
