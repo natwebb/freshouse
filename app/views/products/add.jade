@@ -1,0 +1,18 @@
+extends ../shared/template
+
+block less
+  link(rel='stylesheet', href='/less/products.css')
+
+block content
+  #headerspace
+  h1 Add a New Product to the Database
+  form(method='post', action='/products/create')
+    input(type='text', name='name', placeholder='name')
+    input(type='text', name='cost', placeholder='cost')
+    input(type='text', name='filename', placeholder='image filename')
+    input(type='text', name='shortDesc', placeholder='short description')
+    input(type='text', name='sku', placeholder='sku')
+    input(type='text', name='category', placeholder='category')
+    input(type='text', name='tags', placeholder='tags, separated by commas')
+    textarea(name='longDesc', placeholder='long description')
+    button Add Product

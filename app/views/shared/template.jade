@@ -1,0 +1,48 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title= title
+    link(rel='stylesheet', href='/css/normalize.css')
+    link(rel='stylesheet', href='/less/app.css')
+    block less
+  body
+    header
+      #header-contain
+        #social-connect
+          ul#social-buttons
+            li
+              a(href="#") f
+            li
+              a(href="#") l
+
+        #logo
+
+        nav
+          ul#nav
+            li
+              a(href='#') about
+            li
+              a(href='/products') shop
+            li
+              a(href='#') faq
+            li
+              a(href='#footer') contact
+
+    block content
+
+    #footer
+      #footer-contain
+        h1 NEED TO KNOW MORE?
+        p Contact us! We're here to answer your questions and listen to your comments and suggestions. We'll get back to you within three business days!
+        form(method='POST', action='/feedback')
+          input(type='text' name='name' placeholder='Name')
+          input(type='text' name='email' placeholder='Email Address')
+          textarea(name='question' placeholder='Questions, comments, suggestions?')
+          button Send
+
+    script(src='/js/vendor/jquery.js')
+    script(src='/js/vendor/lodash.js')
+    script(src='/js/vendor/moment.js')
+    script(src='/js/source/main.js')
+

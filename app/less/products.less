@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'social';
+    src: url('/fonts/socialico-webfont.eot');
+    src: url('/fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/socialico-webfont.woff') format('woff'),
+         url('/fonts/socialico-webfont.ttf') format('truetype'),
+         url('/fonts/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'georgia-italic';
+    src: url('/fonts/georgia_italic-webfont.eot');
+    src: url('/fonts/georgia_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/georgia_italic-webfont.woff') format('woff'),
+         url('/fonts/georgia_italic-webfont.ttf') format('truetype'),
+         url('/fonts/georgia_italic-webfont.svg#georgiaitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'mission-gothic-thin-italic';
+  src: url('/fonts/mission_gothic_thin_italic-webfont.eot');
+  src: url('/fonts/mission_gothic_thin_italic-webfont.svg#mission_gothicthin_italic') format('svg'),  url('../fonts/mission_gothic_thin_italic-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/mission_gothic_thin_italic-webfont.woff') format('woff'),  url('../fonts/mission_gothic_thin_italic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mission-gothic-thin';
+  src: url('/fonts/mission_gothic_thin-webfont.eot');
+  src: url('/fonts/mission_gothic_thin-webfont.svg#mission_gothicthin') format('svg'),  url('../fonts/mission_gothic_thin-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/mission_gothic_thin-webfont.woff') format('woff'),  url('../fonts/mission_gothic_thin-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/****
+UNIVERSAL
+*****/
+h1 {
+  text-align: center;
+  margin: 8px;
+}
+
+/****
+HEADER SPACER
+****/
+#headerspace{
+  height: 175px;
+}
+
+/****
+TITLE
+****/
+#title h1{
+  font-family: 'georgia-italic';
+  font-weight: lighter;
+}
+
+/****
+PRODUCT LISTINGS
+****/
+.container h1{
+  font-size: 2.5em;
+}
+
+#healthy, #household{
+  padding-bottom: 5px;
+  margin-bottom: 90px;
+  margin-top: 90px;
+}
+
+#household{
+  padding-top: 20px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1060px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.productBox{
+  background-repeat: no-repeat;
+  width: 180px;
+  float: left;
+  margin: 20px 20px 0px 20px;
+  text-align: center;
+  border: 1px solid lightgray;
+  padding: 3px;
+}
+
+.productBox p{
+  font-size: 1em;
+  text-align: center;
+}
+
+.clear{
+  clear: both;
+}
+
+/****
+INDIVIDUAL PRODUCT
+****/
+#mainContent{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.productContainer{
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#columnA, #columnB{
+  float: left;
+}
+
+#columnA{
+  width: 600px;
+}
+
+#picture{
+  width: 500px;
+  height: 600px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+#columnB{
+  width: 280px;
+}
+
+#columnB div{
+  margin: 10px;
+}
+
+#name{
+  font-family: 'mission-gothic-thin-italic';
+  font-size: 3em;
+}
+
+#cost{
+  font-family: 'mission-gothic-thin';
+  font-size: 1.5em;
+  color: #7b96cd;
+  font-weight: 400;
+}
+
+#longDesc{
+  font-family: 'mission-gothic-thin';
+  line-height: 1.4em;
+}
+
+#addToCart{
+  font-family: 'mission-gothic-thin';
+  width: 100%;
+  background-color: #7b96cd;
+  color: white;
+  font-size: 2em;
+  transition: ease-in-out .2s;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+#addToCart:hover{
+  background-color: #36496e;
+  transition: ease-in-out .2s;
+}

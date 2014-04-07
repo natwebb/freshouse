@@ -1,0 +1,17 @@
+extends ../shared/template
+
+block less
+  link(rel='stylesheet', href='/less/products.css')
+
+block content
+  #headerspace
+  #mainContent
+    .productContainer
+      #columnA
+        #picture(style='background-image: url("'+product.url+'")')
+      #columnB
+        #name= product.name
+        #cost= '$' + product.cost
+        #longDesc= product.longDesc
+        #addToCart Add to Cart
+      .clear

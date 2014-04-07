@@ -1,0 +1,31 @@
+extends ../shared/template
+
+block less
+  link(rel='stylesheet', href='/less/products.css')
+
+block content
+  #headerspace
+  #title
+    h1 SHOP
+  #healthy
+    .container
+      h1 Healthy Drinking Water
+      each product in products
+        if(product.category==='Healthy Drinking Water')
+          .productBox(data-id='#{product._id.toString()}')
+            a(href='/products/'+product._id.toString())
+              img(src='#{product.url}' width='160' height='205')
+            p= product.name
+            p= '$' + product.cost
+    .clear
+  #household
+    .container
+      h1 Household
+      each product in products
+        if(product.category==='Household')
+          .productBox(data-id='#{product._id.toString()}')
+            a(href='/products/'+product._id.toString())
+              img(src='#{product.url}')
+            p= product.name
+            p= '$' + product.cost
+    .clear
