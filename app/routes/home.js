@@ -8,6 +8,10 @@ exports.faq = function(req, res){
   res.render('home/faq', {title: 'The Fresh House'});
 };
 
+exports.about = function(req, res){
+  res.render('home/about', {title: 'The Fresh House'});
+};
+
 exports.feedback = function(req, res){
   console.log('/************************************/');
   console.log(req.body);
