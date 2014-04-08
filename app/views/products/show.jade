@@ -4,6 +4,10 @@ block less
   link(rel='stylesheet', href='/less/products.css')
 
 block content
+  script.
+    var productData = {};
+    productData.name = '#{product.name}';
+    productData.amount = #{product.cost};
   #headerspace
   #mainContent
     .productContainer
@@ -13,5 +17,7 @@ block content
         #name= product.name
         #cost= '$' + product.cost
         #longDesc= product.longDesc
-        #addToCart Add to Cart
       .clear
+
+block scripts
+  script(src='/js/source/productshow.js')
